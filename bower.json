@@ -1,0 +1,25 @@
+{
+  "name": "pavankumarkatakam.github.io",
+  "version": "0.0.0",
+  "homepage": "pavankumarkatakam.com",
+  "authors": [
+    "Pavan Kumar <Katakampavan123@gmail.com>"
+  ],
+  "description": "This is my personal website",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

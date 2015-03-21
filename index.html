@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html ng-app="PavanApp">
+<head>
+    <title>Pavan Kumar</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src=bower_components/bootstrap/dist/js/bootstrap.min.js></script>
+    <script src=bower_components/bootstrap-material-design/dist/js/ripples.js></script>
+    <script src=bower_components/bootstrap-material-design/dist/js/material.min.js></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+
+
+    <script src="assets/js/app.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-wfont.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+<body ng-controller="mainController" ng-init="init()">
+<div class="wrapper">
+    <section class="tab-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 profile " ng-style="theme.bg">
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
+                                    <img src="mydata/pavankumar.jpg" class="profile-pic">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12" ng-style="theme.crlight">
+                                    <div class="text-center profile_info ">
+                                        <h1 id="name" class="transition-02">Pavan kumar</h1>
+                                        <h4 class="line">Web designer and developer</h4>
+                                        <h6><span class="fa fa-map-marker"></span> Hyderabad , India</h6>
+                                    </div>
+                                    <div class="profile_desc text-left" ng-style="theme.brdark">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac risus
+                                            nibh. Donec adipiscing luctus tur
+                                    </div>
+                                    <div class="profile_social text-center">
+                                        <h6>My social profiles</h6>
+                                        <a href="#" ng-style="theme.brdark">
+                                            <i ng-style="theme.crlight" class="fa fa-facebook"></i></a>
+                                        <a href="#" ng-style="theme.brdark">
+                                            <i ng-style="theme.crlight" class="fa fa-twitter"></i></a>
+                                        <a href="#" ng-style="theme.brdark">
+                                            <i ng-style="theme.crlight" class="fa fa-linkedin"></i></a>
+                                        <a href="#" ng-style="theme.brdark">
+                                            <i ng-style="theme.crlight" class="fa fa fa-dribbble"></i></a>
+                                        <a href="#" ng-style="theme.brdark">
+                                            <i ng-style="theme.crlight" class="fa fa-foursquare"></i></a>
+
+                                        <div class="clear"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 content">
+                            <div class="content-inner">
+                                <div class="col-sm-11 height" style="padding-left: 0px;">
+                                    <div class="page">
+                                        <div ng-show="isRouteLoading">Yes Loading</div>
+                                        <div ng-view class="pop height"
+                                             style="background-color: white;margin-right: 10px;"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1  tabs"
+                                     style="padding-left: 0;padding-right: 0;">
+                                    <ul class="top">
+                                        <li ng-style="theme.bg">
+                                            <a class="btn" ng-style="theme.crlight" href="#/"><i class="fa fa-user"></i></a>
+                                        </li>
+                                        <li ng-style="theme.bg">
+                                            <a class="btn" ng-style="theme.crlight" href="#/resume"><i
+                                                    class="fa fa-server"></i></a>
+                                        </li>
+                                        <li ng-style="theme.bg">
+                                            <a class="btn" ng-style="theme.crlight" href="#/portfolio"><i
+                                                    class="fa fa-suitcase"></i></a>
+                                        </li>
+                                        <li ng-style="theme.bg">
+                                            <a class="btn" ng-style="theme.crlight" href="#/blog"><i
+                                                    class="fa fa-bullhorn"></i></a>
+                                        </li>
+                                        <li ng-style="theme.bg">
+                                            <a class="btn" ng-style="theme.crlight" href="#/contact"><i
+                                                    class="fa fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="bottom">
+                                        <li ng-style="theme.bg">
+                                            <a href="" ng-style="theme.crlight"><i class="fa fa-print"></i></a>
+                                        </li>
+                                        <li ng-style="theme.bg">
+                                            <a href="" ng-style="theme.crlight"><i class="fa fa-download"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $(document).ready(function () {
+        $.material.init();
+    });
+</script>
+</body>
+</html>
